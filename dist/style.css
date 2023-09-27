@@ -1,8 +1,14 @@
+
+
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
+  @media screen and (max-width:1200px) and (main-width:768px) {
+    background:white;
+    
+  }
 }
 
 .container {
@@ -12,9 +18,11 @@ body {
 }
 
 /* Header */
-.header {
-  background-color: #f7f9fa;
-  padding: 20px;
+.sticky-header {
+  position:sticky;
+  top: 0;
+  background-color:white;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -30,8 +38,15 @@ nav a {
   color: #000204bf;
   text-decoration: none;
   margin-right: 30px;
+  @media screen and (max-width:992px) {
+    display: block;
+    font-size: 10px; 
+  }
+  @media screen and (max-width:768px) {
+    display: block;
+    font-size: 10px; 
 }
-
+}
 .hero {
   background-image: url('https://img.freepik.com/free-photo/top-view-meat-sandwich-sandwich-made-meat-grilled-spit-with-vegetables-dark-blue-desk-sandwich-burger-food-meal-lunch-meat-photo_140725-64959.jpg?w=996&t=st=1695804226~exp=1695804826~hmac=a1b092f81a6a930d8a2e737a8b09b956d59dcde2ba9efa448301e85139c0462f');
   background-size: cover;
@@ -58,8 +73,16 @@ nav a {
   font-size: 18px;
   border: none;
   cursor: pointer;
+  transition-property: transform;
+  transition-timing-function:ease ;
+  transition-duration:0.3s ;
+  transition-delay: 0s ;
 }
- 
+.btn:hover{
+  transform: translate(-10px);
+
+}
+
 /* Product showcase section */
 .product-showcase {
   display: flex;
@@ -147,9 +170,11 @@ nav a {
 }
 
 /* Footer */
-footer {
-  background-color: #f1f1f1;
-  padding: 20px;
+.sticky-footer {
+  position:sticky;
+  bottom: 0;
+  background-color:white;
+  padding: 5px;
   text-align: center;
   color: #333;
 }
