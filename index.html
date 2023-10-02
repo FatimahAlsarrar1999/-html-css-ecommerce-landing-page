@@ -6,97 +6,171 @@
   <meta charset="UTF-8">
   <meta name="description" content="this website is about Restaurant menu ">
   <link rel="stylesheet" href="dist/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+
   <title>Restaurant </title>
 </head>
 <body>
-  <header class=" sticky-header">
-    <img src="logo.jpg" width="150" height="100" alt="Logo">
-    <nav>
-      
-        <a href="#">Home</a>
-        <a href="#">Dishes</a>
-        <a href="#">Drinks</a>
-        <a href="#">Location </a>
+  <div class="header">
+  <div class="container">
+    <div class="navbar">
+
+      <div class ="logo">
+        <img src="logo.jpg" width="125px" alt="Logo">
+      </div>
+      <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dishes</a></li>
+        <li><a href="#">Drinks</a></li>
+        <li><a href="#">Account</a></li>
+      </ul>
+      </nav>
+      <img src="cart.png" width="30px" height="30px"> 
+    </div>
+    <div class="row">
+      <div class="col-2">
+        <h1>The Best<br> In The Town !</h1>
+        <h2>Try a better & faster eating Experience ...</h2><h4><br>
+        Satisfy your cravings by getting the best <br> quality food from us and enjoy with your<br> beloved ones. 
+      Customer satisfaction is<br> our first priority .
+    Come and have a best <br> Experience in our place </h4>
+        <button class ="btn"> Explor Now &#8594; </button> 
+      </div>
+      <div class="col-2">
+        <img src="background.jpg" alt="background">
+    </div>
     
-    </nav>
-
-  </header>
+    </div>
+  </div>
+  
   <main>
-  <section class="hero">
-    <div>
-    <h1>The Best In The Town !</h1>
-    <h3>Try a better & faster eating Experience ... </h3>
-   <button class ="btn"> BUY NOW !!</> </button> 
+  <div class="hero">
+    <div class="small-container">
+      <h2 class="title">Feature Catogry</h2>
+      <div class="row">
+        <div class="col-3">
+          <img src="product1.jpg" alt="drink " width="200" height="200" >
+          
+         </div>
+        <div class="col-3">
+          <img src="product2.jpg" alt="sweet" width="200" height="200" >
+        
+        </div>
+        <div class="col-3">
+          <img src="product3.jpg" alt="limon drink" width="200" height="200">
+          
+  
+        </div>
+      </div>
+     
     </div>
-  </section>
+    </div>
+    
+    <div class="small-container">
+      <h2 class="title">Feature Products</h2>
+      
+      <div class="row">
+        <div class="col-4">
+          <img src="product4.jpg" alt="pizza" width="200" height="200">
+          <h4>pizza</h4>
+          <div class="describtion">
+           <p>Delicious pizza with tomato sauce, vegetables and basil</p>
+          </div>
+          <p>$45.00</p>
+        </div>
 
-  <section class="product-showcase">
-    <div>
-      <img src="product1.jpg" alt="Pizza " width="200" height="200" >
-      <h3>Product 1</h3>
-      <p>Crispy pizza with tomato sauce and delicious mushrooms !</p>
-    </div>
-    <div>
-      <img src="product2.jpg" alt="Chicken hamburger" width="200" height="200" alig >
-      <h3>Product 2</h3>
-      <p>Crispy fried chicken burger</p>
-    </div>
-    <div>
-      <img src="product3.jpg" alt="Vegetable pasta" width="200" height="200">
-      <h3>Product 3</h3>
-      <p>Pasta with vegetables, basil and fresh cheese</p>
-    </div>
-  </section>
+      
+      <div class="col-4">
+        <img src="product5.jpg" alt="burger" width="200" height="200">
+        <h4>Chicken Hamburger</h4>
+        <div class="describtion">
+         <p>Crispy chicken with ranch sauce and fresh vegetables</p>
+        </div>
+        <p>$30.00</p>
+      </div>
 
-  <section class="customer-reviews">
-    <h2>Customer Reviews</h2>
-    <div class="review">
-      <p class="review-content">Everything is clean , I like it.</p>
-      <p class="review-customer-name">Ahmed</p>
-      <p class="review-rate">4 Out of 5</p><br>
+      <div class="col-4">
+        <img src="product6.jpg" alt="pasta" width="200" height="200">
+        <h4>Pasta</h4>
+        <div class="describtion">
+         <p>Pasta with grilled chicken pieces and delicious Italian sauce</p>
+        </div>
+        <p>$50.00</p>
+      </div>
+    
+      </div>
+    
+  
+
+  <div class="customer-reviews">
+    <div  class="small-container">
+      <h2 class="title">Customer Reviews</h2>
+      <div class="row">
+        <div class ="col-3">
+          <p> Good good food I love the hamburger it was juicy, fresh and crunchy</p>
+        <img src ="user-1.png">
+        <h3>Rosi</h3>
+      </div>
+      </div>
+
+      <div class ="col-3">
+        <p> I loved food very much and loved different and delicious drinks</p>
+      <img src ="user-2.png">
+      <h3>William </h3>
     </div>
 
-    <div class="review">
-      <p class="review-content">Responsive customer service.</p>
-      <p class="review-customer-name">Sara</p>
-      <p class="review-rate">5 Out of 5</p><br>
-    </div>
+    <div class ="col-3">
+      <p> The cleanliness of the place is good and the quality food is perfect.</p>
+    <img src ="user-3.png">
+    <h3>Sara</h3>
+  </div>
+  </div>
 
-    <div class="review">
-      <p class="review-content">Dlish food</p>
-      <p class="review-customer-name">Fatimah</p>
-      <p class="review-rate">3.8 Out of 5</p><br>
-    </div>
-    </div>
-  </section>
 
-  <section class="newsletter">
+    
+  
+
+  <div class="newsletter">
+    <div class="small-container">
+      <h2 class="title">newsletter</h2>
+      <div class="row">
     <h2>Subscribe to Our Newsletter</h2>
     <form action="#" method="post">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
       <input type="submit" value="Subscribe">
     </form>
-  </section>
-  </main>
+  </div>
+    </div></div>
 
-  <footer class="sticky-footer">
-    <nav role="navigation" aria-label="Main Navigation" >
-    <ul role="list" aria-label="Navigation Menu">
+
+    <footer class="footer">
       
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <p>Contact information</p>
-    <ul class="social-media-icons">
-      <li><a href="#"><img src="facebook.jpg" alt="Facebook" width="25" height="25"></a></li>
-      <li><a href="#"><img src="X.jpg" alt="The X" width="25" height="25"></a></li>
-      <li><a href="#"><img src="instgram.jpg" alt="instagram" width="25" height="25"></a></li>
-    </ul>
-  </footer>
+    <nav role="navigation" aria-label="Main Navigation" >
+      <ul role="list" aria-label="Navigation Menu">
+        
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <p>Contact information</p>
+      <ul class="social-media-icons">
+        <li><a href="#"><img src="facebook.jpg" alt="Facebook" width="25" height="25"></a></li>
+        <li><a href="#"><img src="X.jpg" alt="The X" width="25" height="25"></a></li>
+        <li><a href="#"><img src="instgram.jpg" alt="instagram" width="25" height="25"></a></li>
+      </ul>  
+        
+      
+</footer>
+
+ 
+
+  
 
   
 </body>
